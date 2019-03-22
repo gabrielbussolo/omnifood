@@ -12,7 +12,16 @@ html{
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
-
+.clear-fix{
+  zoom: 1;
+}
+.clear-fix::after{
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /* REUSABLE COMPONENTS */
 
 .row{
@@ -201,4 +210,47 @@ header{
 .meal-photo img:hover{
   opacity: 1;
   transform: scale(1.03);
+}
+
+/* HOW IT WORKS */
+
+.section-steps{
+  background-color: #f4f4f4;
+}
+.steps-box:first-child{
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+.steps-box:last-child{
+  padding-left: 3%;
+  margin-top: 70px;
+}
+.works-step{
+  margin-bottom: 50px;
+}
+.works-step:last-of-type{
+  margin-bottom: 80px;
+}
+.works-step div{
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+.app-screen{
+  width: 40%;
+  float: right;
+}
+.btn-app img{
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
