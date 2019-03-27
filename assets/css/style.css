@@ -411,3 +411,68 @@ input[type=checkbox]{
 *:focus{
   outline: none;
 }
+
+/* FOOTER */
+
+footer{
+  background: #333333;
+  padding: 50px;
+  font-size: 80%;
+}
+.footer-nav{
+  list-style: none;
+  float: left;
+}
+.social-links{
+  list-style: none;
+  float: right;
+}
+.footer-nav li,
+.social-links li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+  margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:link{
+  text-decoration: none;
+  border: 0;
+  color: #888888;
+  transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+  color: #DDDDDD;
+}
+.social-links li a:link,
+.social-links li a:visited{
+  font-size: 160%;
+}
+.logo-facebook,
+.logo-twitter,
+.logo-instagram,
+.logo-googleplus{
+  transition: color 0.2s;
+}
+.logo-facebook:hover{
+  color: #3b5998;
+}
+.logo-twitter:hover{
+  color: #1da1f2;
+}
+.logo-instagram:hover{
+  color: #c32aa3;
+}
+.logo-googleplus:hover{
+  color: #db4437;
+}
+footer p{
+  color: #888888;
+  text-align: center;
+  margin-top: 20px;
+}
