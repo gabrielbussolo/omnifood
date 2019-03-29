@@ -5,12 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html,
+body{
   color: #555555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 .clear-fix{
   zoom: 1;
@@ -206,8 +208,8 @@ header{
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
-  border-bottom: 2px solid transparent;
-  transition: border 0.2s;
+  border: 2px solid transparent;
+  transition: border-bottom 0.2s;
 }
 .main-nav li a:hover,
 .main-nav li a:active{
@@ -286,7 +288,6 @@ header{
 }
 .app-screen{
   width: 40%;
-  float: right;
 }
 .btn-app img{
   height: 50px;
